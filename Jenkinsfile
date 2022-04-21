@@ -25,9 +25,7 @@ stage('SonarQube'){
 		script {
           	scannerHome = tool 'sonar_coverage';
         	}
-			steps{
-			sh 'mvn clean verify sonar:sonar'
-			}
+			
 		withSonarQubeEnv('sonar_coverage'){
 		sh '''
 		/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar_coverage/bin/sonar-scanner \
