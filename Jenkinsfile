@@ -5,6 +5,12 @@ pipeline {
   }
   
   stages{
+    
+  stage('Git') {
+		steps{
+		git 'https://github.com/rahulguptaft9/customplugin'
+		}	
+	}  
   stage("Build") {
       steps {
         sh "mvn  compile"
