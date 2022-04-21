@@ -11,11 +11,11 @@ pipeline {
 		git 'https://github.com/rahulguptaft9/customplugin'
 		}	
 	}  
-  /*stage("Build") {
+  stage("Build") {
       steps {
-        sh "mvn  compile pom.xml"
+        sh "mvn compile"
         }
-    }*/
+    }
 	  
 stage('SonarQube'){
 		tools{
