@@ -33,7 +33,7 @@ stage('SonarQube'){
 		-Dsonar.login=443b17ef84fc21dfd66dba03fc8fe3299edae9de \
 		-Dsonar.projectKey=javajava \
 		-Dsonar.projectName=javajava \
-		-Dsonar.java.binaries=target/classes
+		-Dsonar.java.binaries=target
 		'''
 
 		}		
